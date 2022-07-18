@@ -1,0 +1,62 @@
+    @font-face {
+        font-family: "Causten";
+        src: url(graphics/Causten-Round/Causten-Regular.otf) format("opentype");
+    }		
+    body{
+        margin: 0px;
+        padding: 0px;
+        background-color: #A2f2df;
+        font-family: "Causten";
+    }
+    nav{
+        width: 100vw;
+        height: 50px;
+        padding: 20px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+    }
+    @media screen and (max-width: 600px) {
+        nav{
+            font-size: .9em;
+        }
+        .logo_div{
+            height: 25px;
+        }
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        float: right;
+        font-size: 1em;
+    }
+    .logo_div{
+        position: absolute;
+        top: auto;
+        left: 0;
+        margin: 40px;
+        height: 35px;
+    }
+    .logo_div img{
+        height: 100%;
+        width: auto;
+    }
+    li{
+        margin-right: 30px;
+        cursor: pointer;
+    }
+    li button{
+        padding: 10px 20px;
+        border-radius: 10px;
+        border: none;
+        background-color: #1e1e1e;
+        color: #A2f2df;
+        font-family:"Causten";
+        font-size: 1em;
+        cursor: pointer;
+    }
+    li button:hover{
+        background-color: #181818;
+    }
