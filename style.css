@@ -2,8 +2,15 @@ html{
    scroll-behavior: smooth;
 }
 body{
+   font-family: "Causten";
    padding: 0px;
    margin: 0px;
+}
+@media screen  and (max-width: 600px) {
+  body{
+      display: flex;
+      flex-direction: column;
+   }
 }
 a{
    text-decoration: none;
@@ -26,7 +33,7 @@ nav{
    display: flex;
    align-items: center;
    justify-content: right;
-   z-index: 1;
+   z-index: 900;
 }
 /* @supports (!backdrop-filter: blur(8px) {
    ul{
@@ -112,6 +119,12 @@ li button:hover{
    align-items: center;
    justify-content: center;
 }
+@media screen  and (max-width: 600px) {
+   .hero{
+      height: 650px;
+      /* margin-bottom: 250px; */
+   }
+}
 .hero img{
    width: 100%;
    height: 100%;
@@ -124,6 +137,12 @@ li button:hover{
    background-color: #001f17;
    opacity: .8;
    background-blend-mode: multiply;
+}
+@media screen  and (max-width: 600px) {
+   .hero::before{
+      height: 650px;
+      /* margin-bottom: 250px; */
+   }
 }
 p{
    position: absolute;
@@ -145,19 +164,79 @@ p{
    font-size: 4em;
 }
 section{
+   padding-top: 80px;
    height: 100vh;
    width: 100vw;
    background-color: #A2f2df;
    display: flex;
+   flex-direction: column;
+   align-items: center;
    justify-content: center;
-   /* align-items: center; */
 }
-.info p{
+@media screen  and (max-width: 600px) {
+   section{
+      height: fit-content;
+
+   }
+}
+.header{
+   width: 300px;
+   height: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: center; 
+}
+.header p{
    color: #1e1e1e;
    font-size: 2.5em;
 }
 @media screen  and (max-width: 600px) {
-   .info p{
-      font-size: 1.5em;
+   .header p{
+      font-size: 1.8em;
+   }
+}
+.cards-container{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100vw;
+   height: 90%;
+}
+@media screen  and (max-width: 600px) {
+   .cards-container{
+     flex-direction: column;
+     width: 100vw;
+     height: fit-content;
+   }
+}
+.a-card{
+   height: 300px;
+   width: 25%;
+   border-right: 1px solid #1e1e1e;
+   margin-right: 20px;
+   padding-right: 30px;
+}
+@media screen  and (max-width: 600px) {
+   .a-card{
+      width: 80vw;
+      margin: 0px;
+      margin-bottom: 30px;
+      border: none;
+   }
+   .a-card p{
+      margin-bottom: 100px;
+   }
+}
+.a-card:last-of-type{
+   border: 0px;
+}
+.a-card p{
+   font-size: 1.3vw;
+   text-align: left;
+   color: #1e1e1e;
+}
+@media screen  and (max-width: 600px) {
+   .a-card p{
+      font-size: 1.2em;
    }
 }
