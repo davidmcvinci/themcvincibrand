@@ -227,6 +227,12 @@ section{
       margin-bottom: 100px;
    }
 }
+.a-card img{
+   transform: scale(.7);
+   position: relative;
+   left: 60%;
+   top: 28%;
+}
 .a-card:last-of-type{
    border: 0px;
 }
