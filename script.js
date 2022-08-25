@@ -16,3 +16,29 @@ function reveal(){
         }
     }
 }
+
+// //for scrolling works page sideways
+// (function(){
+//     function scrollH(e){
+//         //prevent scroll default
+//         e.preventDefault();
+//         e = window.event || e;
+//         let delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
+//         document.querySelector('.works').scrollLeft -= (delta * 40);
+//     }
+//     if (document.querySelector('.works').addEventListener){
+//         document.querySelector('.works').addEventListener('mousewheel', scrollH, false);
+//         document.querySelector('.works').addEventListener('DOMMouseScroll', scrollH, false);
+//     }
+// })();
+
+
+//for smooth locomotive scrolling
+let Scrollbar = window.Scrollbar;
+
+const options = {
+    'damping' : .1,
+}
+
+Scrollbar.init(document.querySelector('body'), options);
+

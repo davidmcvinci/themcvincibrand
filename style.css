@@ -5,6 +5,8 @@ body{
    font-family: "Causten";
    padding: 0px;
    margin: 0px;
+   width: 100vw;
+   height: 100vh;
 }
 @media screen  and (max-width: 600px) {
   body{
@@ -268,11 +270,16 @@ section{
    height: 100vh;
    width: fit-content;
    display: flex;
+   flex-wrap: nowrap;
    justify-content: safe;
    background-color: #a2f2df;
+   overflow-x: auto;
+   overflow-y: hidden;
+   -webkit-overflow-scrolling: touch;
 }
 
 .a-work{
+   flex: 0 0 auto;
    height: 100%;
    background-position: center;
    width: 400px;
