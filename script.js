@@ -42,3 +42,6 @@ const options = {
 
 Scrollbar.init(document.querySelector('body'), options);
 
+//for object fit video on explorer
+objectFitVideos();
+

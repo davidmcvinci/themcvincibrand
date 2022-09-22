@@ -128,9 +128,10 @@ li button:hover{
       /* margin-bottom: 250px; */
    }
 }
-video{
+.hero video{
    object-fit: cover;
    width: 100vw;
+   font-family: 'object-fit:cover';
 }
 .hero::before{
    position: absolute;
