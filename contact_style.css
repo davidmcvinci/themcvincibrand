@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+}
+@font-face {
+    font-family: "Causten";
+    src: url(graphics/Causten-Round/Causten-Regular.otf) format("opentype");
+ }
+ @font-face {
+    font-family: "Causten Extrabold";
+    src: url(graphics/Causten-Round/Causten-ExtraBold.otf) format("opentype");
+ }
+.wholebody_div{
+    box-sizing: border-box;
+    padding-inline: 30px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #A2f2df;
+    height: fit-content;
+    position: absolute;
+}
+.back_btn{
+    z-index: 1;
+    position: fixed;
+    margin: 20px;
+    margin-inline: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+}
+@media screen  and (max-width: 600px) {
+    .back_btn{
+        display: none;
+    }
+}
+.intro{
+    color: #1e1e1e;
+    text-align: center;
+    line-height: 1.1em;
+    transition: none;
+    margin-bottom: 20px;
+    font-family: "Causten";
+    font-weight: lighter;
+    font-size: 4em;
+    position: relative;;
+}
+@media screen  and (max-width: 600px) {
+    .intro{
+        margin-top: 70px;
+        font-size: 3em;
+    }
+}
+.form_box{
+    width: 40vw;
+    height: fit-content;
+    border-radius: 5%;
+    display: block;
+    background-color: #1e1e1e;
+    padding-block: 30px;
+    padding-inline: 30px;
+}
+@media screen  and (max-width: 600px) {
+    .form_box{
+        width: 70vw;
+    }
+}
+form h3{
+    font-size: 1.4em;
+    color: white;
+    font-family: "Causten";
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    
+}
+form{
+    font-family: "Causten";
+    display: flex;
+    flex-direction: column;
+}
+form label{
+    color: white;
+}
+form input, form textarea{
+    margin-bottom: 20px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    font-family: "Causten";
+    font-size: 1.1em;
+    height: 45px;
+    color: white;
+    padding-inline: 10px;
+    transition: .3s ease-in-out;
+}
+form input:hover, form textarea:hover{
+    background-color: rgb(47, 47, 47);
+}
+form textarea{
+    max-width: 97%;
+    min-width: 97%;
+    min-height: 150px;
+    padding-block: 10px;
+}
+form .submit_btn{
+    background-color: #A2f2df;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    width: fit-content;
+    color: #1e1e1e;
+    cursor: pointer;
+    height: fit-content;
+    padding-inline: 30px;
+    padding-bottom: 15px;
+    padding-top: 11px;   
+    transition: .3s ease-in-out;
+}
+.successmessage, .failuremessage{
+   color: white;
+   font-size: 1.4em;
+   position: relative;
+   text-align: left;
+}
+form .submit_btn:hover{
+    background-color: #88dac6;
+}
+footer{
+    margin-top: 100px;
+}
